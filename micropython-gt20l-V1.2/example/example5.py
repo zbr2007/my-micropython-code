@@ -1,6 +1,7 @@
 from machine import SPI,Pin,I2C
 import gt20l #导入库
 import ssd1306
+import time
 
 cs=Pin(15,Pin.OUT) #定义cs引脚
 spi=SPI(-1,mosi=Pin(13),miso=Pin(12),sck=Pin(14)) #定义spi对象
